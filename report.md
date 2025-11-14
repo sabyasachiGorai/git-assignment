@@ -1,8 +1,11 @@
 # 📄 **Git Practical Report Assignment - 7**
 
 **Name:** Sabyasachi Gorai
+
 **Course:** MCA
+
 **Subject:** Software Tools & Technologies
+
 **Date:** *14/11/2025*
 
 ---
@@ -690,7 +693,7 @@ git reset (soft/mixed/hard) rewrites history by moving HEAD. reset is fine for l
 
 ### Why rewriting public history is discouraged
 
-Rewriting public history (via git commit --amend, git rebase, or git reset and then force-pushing) changes commit hashes. Other collaborators who already pulled the old commits will get conflicts and problems when you force-push new history. Use revert for safe undoing on branches shared with others; only rewrite history on local/private branches or after coordinating with your team.
+Rewriting public history (via git commit --amend, git rebase, or git reset and then force-pushing) changes commit hashes. Other collaborators who already pulled the old commits will get conflicts and problems when we force-push new history. We must revert for safe undoing on branches shared with others; only rewrite history on local/private branches or after coordinating with the team.
 
 
 ## **Task 8: Tagging and Releases**
