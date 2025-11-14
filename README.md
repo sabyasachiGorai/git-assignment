@@ -5,6 +5,7 @@
 
 This is CONFLICT branch content.
 
-BRANCH version
+This is the MAIN version.
+ version
 
 
