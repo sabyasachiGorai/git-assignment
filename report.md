@@ -110,3 +110,80 @@ Date:   Fri Nov 14 12:49:47 2025 +0530
 ```bash
 059a325 (HEAD -> master) Initial commit: add README
 ```
+
+
+## **Task 3: Staging Diff and Commit Workflow**
+
+### **Command Used**
+
+```bash
+git status
+```
+
+### **Output**
+
+```bash
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+### **Command Used**
+
+```bash
+git diff README.md
+git add README.md
+```
+
+### **Output**
+
+```bash
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+diff --git a/README.md b/README.md
+index 61d07fd..2539537 100644
+--- a/README.md
++++ b/README.md
+@@ -1 +1,3 @@
+ # Git Practical
++
++# this is a new section added to test task no 3
+\ No newline at end of file
+
+```
+
+### **Command Used**
+
+```bash
+git diff --staged
+```
+
+### **Output**
+
+```bash
+diff --git a/README.md b/README.md
+index 61d07fd..2539537 100644
+--- a/README.md
++++ b/README.md
+@@ -1 +1,3 @@
+ # Git Practical
++
++# this is a new section added to test task no 3
+\ No newline at end of file
+```
+
+### **Command Used**
+
+```bash
+git commit -m "Added new section to the README file"
+```
+
+### **Output**
+
+```bash
+[master 6335e40] Added new section to the README file
+ 1 file changed, 2 insertions(+)
+```
